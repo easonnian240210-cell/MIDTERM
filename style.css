@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffbf7; /* Soft light orange tint background */
+  color: #0a192f;           /* Deep Navy body text */
+}
+
+
+/* 2. Header Landmark Styling */
+.site-header {
+    background-color: #0a192f;
+    color:#ffffff;
+    padding: 20px;
+    text-align:center;
+}
+
+
+/* 3. Main Container Side-by-Side Flexbox Layout */
+.dashboard-container {
+    display: flex; 
+    gap: 20px; 
+    padding: 30px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+
+/* Common Card Box Styling */
+.card-box {
+    flex: 1; 
+    background-color: #ffffff; 
+    border: 1px solid #fed7aa; 
+    border-radius: 8px; 
+    padding: 20px;
+}
+.card-box h2 {
+    color:#0a192f;
+    margin-bottom:15px;
+}
+/* 4. Box 1: Form Stacking & Interactive Controls */
+.form-group {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight:bold;
+}
+
+
+.form-group input {
+    padding:10px;
+    border:1px solid #cbd5e1;
+    border-radius:4px;
+}
+
+
+.form-group input:focus {
+    outline: none;
+    border:#f97316;
+    /* Orange Focus Highlight */
+}
+
+
+/* Light Orange Interactive Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9d5c; /* Light Orange */
+  color: #0a192f;           /* Deep Navy Text */
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.submit-btn:hover {
+    background-color:#f97316;
+    color:#ffffff;
+}
+/* 5. Box 2: Table Formatting */
+.schedule-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+table, th, td {
+    padding:10px;
+    border:1px solid #fed7aa;
+}
+
+
+table th {
+    background-color:#fff7ed;
+}
+
+
+table tr:hover {
+    background-color:#fff7ed;
+}
+
+
+.break-cell {
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff7ed;
+}
+
+
+/* 6. Footer & External Link Styling */
+.site-footer {
+    background-color: #0a192f;
+    color:#ffffff;
+    padding:20px;
+    text-align:center;
+    margin-top: 30px;
+
+}
+
+
+.site-footer a {
+    color:#ff9d5c;
+    font-weight:bold;
+}
+
+
+.site-footer a:hover {
+    color:#ffedd5;
+}
